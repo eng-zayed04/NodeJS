@@ -1,6 +1,11 @@
 var calculator = require('./calculator.js')
 
-console.log("Result of addition : " + calculator.add(10,5));
-console.log("Result of subtraction : " + calculator.sub(10,5));
-console.log("Result of multiplication : " + calculator.mul(10,5));
-console.log("Result of Devide : " + calculator.div(10,5));
+var readline = require('readline-sync');
+
+var firstNum = readline.question('Please enter first number : ');
+var secondNum = readline.question('Please enter second number : ');
+
+console.log("Result of addition : " + calculator.add(firstNum,secondNum));
+console.log("Result of subtraction : " + calculator.sub(firstNum,secondNum));
+console.log("Result of multiplication : " + calculator.mul(firstNum,secondNum));
+console.log("Result of division : " + calculator.div(firstNum,secondNum));

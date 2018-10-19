@@ -1,6 +1,7 @@
 function add(f,s)
 {
-    return f+s;
+    var operator = "+";
+    return eval(f+operator+s);
 }
 function sub(f,s)
 {
